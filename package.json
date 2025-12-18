@@ -22,6 +22,7 @@
     "build": "bun build ./src/index.ts --outdir ./dist --target node && bun run build:cjs && bun run build:types",
     "build:cjs": "bun build ./src/index.ts --outfile ./dist/index.cjs --target node --format cjs",
     "build:types": "tsc --declaration --emitDeclarationOnly --outDir dist src/index.ts",
+    "test": "bun test",
     "prepublishOnly": "bun run build"
   },
   "keywords": [
